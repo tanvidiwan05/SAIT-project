@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syska Power Bank</title>
-<meta charset="UTF-8">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syska Power Bank</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,6 +13,7 @@
     }
 
     .product-card {
+      position: relative;
       max-width: 300px;
       margin: 20px auto;
       background-color: #fff;
@@ -25,8 +24,8 @@
 
     .product-image {
       width: 100%;
-      height: 200px;
-      background: url('moto_g72.jpg') center/cover no-repeat;
+      height: 300px;
+      background: url(pb.jpg) center/cover no-repeat;
     }
 
     .product-info {
@@ -43,6 +42,13 @@
       font-size: 14px;
       color: #555;
       margin-bottom: 15px;
+      display: none; 
+    }
+
+    .detailed-features {
+      font-size: 14px;
+      color: #333;
+      display: none; 
     }
 
     .product-price {
@@ -60,52 +66,41 @@
       text-align: center;
       text-decoration: none;
       border: none;
-      border-radius: 5px;
+      border-radius: 100px;
       cursor: pointer;
     }
 
- 
-        .product-details {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        .product-card:hover .product-image {
-            transform: scale(1.1);
-        }
-
-        .product-card:hover .product-details {
-            display: block;
-        }
-   
-
-
-
-
-
-  </style>
     
+    .product-card:hover .product-description {
+      display: block;
+    }
+
+    .product-card:hover .detailed-features {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <div class="product-card">
-        <img class="product-image" src="syska-powerbank.jpg" alt="Syska Power Bank">
-        <div class="product-details">
-            <h2>Syska Power Bank</h2>
-            <p>Capacity: 10000mAh</p>
-            <p>Output: 5V/2.1A</p>
-            <p>Input: 5V/2A</p>
-            <p>Features: Fast Charging, LED Indicator, Compact Design</p>
-            
-<div class="product-price">$299.99</div>
-    <a href="#" class="buy-button">Buy Now</a>
-        </div>
+
+<div class="product-card">
+  <div class="product-image"></div>
+  <div class="product-info">
+    <div class="product-title">Syska Power Bank</div>
+    <div class="product-description">Syska Power Bank</div>
+    <div class="detailed-features">
+      <p>Key Features:</p>
+      <ul>
+        <li>Capacity: 10000mAh</li>
+         <li> Output: 5V/2.1A</li>
+         <li>  Input: 5V/2A</li>
+        <li>  Features: Fast Charging, LED Indicator, Compact Design</li>
+        
+      </ul>
     </div>
+    <div class="product-price">$99.99</div>
+    <a href="#" class="buy-button">Buy Now</a>
+  </div>
+</div>
+
 </body>
 </html>
