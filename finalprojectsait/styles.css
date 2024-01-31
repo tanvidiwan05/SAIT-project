@@ -1,0 +1,45 @@
+body{
+
+background:url(pin1.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+  background-size: cover;
+
+}
+
+
+table,th,td{
+
+
+border-collapse:collapse;
+padding:20px;
+
+}
+p{
+font-size:20px;
+}
+h3{
+font-size:30px;}
+
+input{
+font-size:40px;
+background-color:powderblue;
+border:1px solid white;}
+
+input:hover{
+color:white;
+}
+
+
+
+header{
+position:fixed;
+top:0;left:0;right:0;
+background:#fff;
+padding:2rem;
+display:flex;
+align-items: center;
+justify-content:space-between;
+z-index:1000;
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.1)
+}
